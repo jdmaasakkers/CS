@@ -1,6 +1,6 @@
 # Highly Parallelized Image Recognition via TensorFlow
 
-TensorFlow is a state-of-the-art open source library for machine learning developed by Google. The Python library allows machine learning using neural networks, a method very suited for image recognition. Unlike basic machine learning, neural networks use layers that are shaped based on the problem studied. A classic example is the recognition of written numbers based on a model calibrated by thousands of written numbers. This type of image recognition is also applied in self-driving vehicles that have to identify different objects on the road and respond based on their location and movement.
+TensorFlow is a state-of-the-art open source library for machine learning developed by Google. The Python library (using GCC) allows machine learning using neural networks, a method very suited for image recognition. Unlike basic machine learning, neural networks use layers that are shaped based on the problem studied. A classic example is the recognition of written numbers based on a model calibrated by thousands of written numbers. This type of image recognition is also applied in self-driving vehicles that have to identify different objects on the road and respond based on their location and movement.
 
 Here, we will use TensorFlow to set up a system that can interpret photos of hands holding up a number of fingers. The model should be able to (in close to real-time) calculate the sum of the numbers indicated by the fingers raised by two hands. 
 
@@ -12,7 +12,7 @@ A number of task have been defined to streamline the project:
 - Implement our own set of photos. This includes parallelized pre-processing which will prepare the photos bto be used as input for the model.
 - Attempt to parallelize with MPI. Study Theano-MPI if this proofs unviable. 
 - Run a parallel version of TensorFlow with our own photos.
-- Benchmark the GPU implementation of TensorFlow with our own dataset with different architecture parameters.
+- Benchmark the GPU implementation of TensorFlow with our own dataset with different architecture parameters. Analyze speedup, efficiency, iso-efficiency. Compare a version with and without MPI. Evaluate performance, overhead, and scheduling. 
 - Set up a way in which new photos can be analyzed and interpreted quickly.
 
 The project will presented in the form of a report, website, and presentation. 
